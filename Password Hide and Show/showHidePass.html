@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>show and hide password</title>
+  </head>
+  <body>
+    <input type="password" id="password" />
+    <!-- <input type="checkbox" id="checkbox" /> -->
+    <!-- <button onclick="show()" id="showBtn">Show</button>
+    <button onclick="hide()" id="hideBtn">Hide</button> -->
+    <label for="radioShow">radioShow</label>
+    <input type="radio" name="password" id="radioShow" />
+    <label for="radioHide">radioHide</label>
+    <input type="radio" name="password" id="radioHide" />
+    <script>
+      const password = document.getElementById("password");
+      //   const checkbox = document.getElementById("checkbox");
+      //   checkbox.addEventListener("change", () => {
+      //     if (checkbox.checked) {
+      //       password.type = "text";
+      //     } else {
+      //       password.type = "password";
+      //     }
+      //   });
+
+      //   const showBtn = document.getElementById("showBtn");
+      //   const hideBtn = document.getElementById("hideBtn");
+
+      //? using addEventListener() function
+      //   showBtn.addEventListener("click", () => {
+      //     password.type = "text";
+      //   });
+      //   hideBtn.addEventListener("click", () => {
+      //     password.type = "password";
+      //   });
+
+      //   function show() {
+      //     password.type = "text";
+      //   }
+      //   function hide() {
+      //     password.type = "password";
+      //   }
+      const radioShow = document.getElementById("radioShow");
+      const radioHide = document.getElementById("radioHide");
+      radioShow.addEventListener("click", () => {
+        password.type = "text";
+      });
+      radioHide.addEventListener("click", () => {
+        password.type = "password";
+      });
+    </script>
+  </body>
+</html>
